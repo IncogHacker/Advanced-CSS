@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.first-Box {
+    width: 700px;
+    height: 400px;
+    color: white;
+    margin-top: 100px;
+    /* border:2px solid white; */
+
+    h1 {
+
+        font-size: 3rem;
+        color: white;
+        margin-left: 50px;
+
+    }
+
+    p {
+        padding: 20px 0px 20px 0px;
+        margin-left: 50px;
+    }
+
+    /* -------------------------------------------------------------- */
+    button {
+
+        width: 150px;
+        height: auto;
+        margin-left: 50px;
+        background-color: black;
+        border: 3px solid white;
+        border-radius: 2px;
+        padding: 10px;
+        font-weight: bold;
+
+        /* ? Transition Starts here using in hover statemnets :::: -- */
+
+        transition-property: width;
+
+        transition-duration: 1s;
+        /*here width increase(250px) but in slow motion till 2 sec then decrease slowly to original 150px in 2 sec .(mostly give 300ms).*/
+
+        /* transition-timing-function:ease-in;  */
+        /*here width increase in start slow then increase fast (Slow to fast)*/
+
+        transition-timing-function: linear;
+        /*width increase with the constant speed */
+
+        transition-delay: 1s;
+        /*in this when we hover on the button after 2 seconds it start increasing till (250px) then stop till 2 seconds and start decreasing to original poisition (150px)
+         
+        time kam ya badha saktein..
+        */
+
+        /* ? Now these lines can be written in single line */
+
+        /* transition: width 1s linear 2s ; */
+
+        /*(width when we hover , transition duration (1s), transition-timing-function(linear), transition-delay(2s) )*/
+
+
+    }
+
+
+    button a {
+
+        color: white;
+        text-decoration: none;
+
+    }
+
+    button:hover {
+
+        /* background-color: white; */
+        width: 250px;
+        /* a{
+            color:black;
+        } */
+
+    }
+
+
+
+
+
+
+    /* ------------------------------------------------------------------- */
+
+
+}
+
+
+
+.image {
+    width: 700px;
+    height: 400px;
+    /* border:2px solid white; */
+    display: grid;
+    place-content: center;
+
+    img {
+
+        width: 600px;
+        height: auto;
+    }
+}
