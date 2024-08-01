@@ -35,8 +35,8 @@ body {
     }
 
     /* -------------------------------------------------------------- */
-    button {
-
+    button{
+        display:inline-block;
         width: 150px;
         height: auto;
         margin-left: 50px;
@@ -48,7 +48,7 @@ body {
 
         /* ? Transition Starts here using in hover statemnets :::: -- */
 
-        transition-property: width;
+        transition-property: width ,background color;
 
         transition-duration: 1s;
         /*here width increase(250px) but in slow motion till 2 sec then decrease slowly to original 150px in 2 sec .(mostly give 300ms).*/
@@ -70,12 +70,12 @@ body {
         /* transition: width 1s linear 2s ; */
 
         /*(width when we hover , transition duration (1s), transition-timing-function(linear), transition-delay(2s) )*/
-
+        }
 
     }
 
 
-    button a {
+    a {
 
         color: white;
         text-decoration: none;
@@ -84,11 +84,11 @@ body {
 
     button:hover {
 
-        /* background-color: white; */
+        background-color: blue;
         width: 250px;
-        /* a{
-            color:black;
-        } */
+        color:black;
+    
+        box-shadow: 4px 4px 8px 1px #fff;
 
     }
 
@@ -100,7 +100,6 @@ body {
     /* ------------------------------------------------------------------- */
 
 
-}
 
 
 

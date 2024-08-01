@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition-hover</title>
+</head>
+
+<body>
+    <section id="Container">
+        <div class="Circle Circle-1"></div>
+        <div class="Circle Circle-2"></div>
+        <div class="Circle Circle-3"></div>
+        <div class="Circle Circle-4"></div>
+
+    </section>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #2B3033;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        #Container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 600px;
+            /* border: 2px solid white; */
+            margin: 90px 0px 0px 0px;
+            padding-left: 50px;
+
+        }
+
+        .Circle {
+            width: 100px;
+
+            height: 100px;
+            /*we can also write aspect-ratio:1 height will automatically 100 change*/
+
+            /* border:2px solid white; */
+            border-radius: 50%;
+            background-color: #4861EC;
+            box-shadow: 0px 0px 0px 15px #353F6D;
+
+            transition: all;
+            transition-duration: 5s;
+            transition-timing-function: linear;
+
+
+        }
+
+        .Circle:hover {
+
+            /* translate: 100vw 0; */
+
+            /*isko krne pe circle horixontally move krega fir laut kr aajayega saare circle me jab wahan se cursor hta lenge tab aur vertical 0 hai to move nhi krega...*/
+
+
+
+
+            /* transform: translate(500px); */
+            /*isko krne pe horizontal 500 px tak aage jayega fir wapas ajayega*/
+
+
+            /* transform: translate(0px ,500px); */
+            /*isko krne pe circle 500 px vertical move krega*/
+
+
+            /* In CSS, the translate function is used to move (translate) an element from its current position. This function is part of the transform property, which can also handle other transformations like scaling, rotating, and skewing. 
+
+            transform: translate(x,y); 
+               x ----- specifies the translation distance along the horizontal axis.
+              y-----specifies the translation distance along the vertical axis. */
+
+        }
+
+        .Circle-1:hover {
+
+            transform: translateX(90vw);
+            transition: 5s ease;
+
+            /* Timing Functions  :
+            ease Default value--- Starts slowly,speeds up in the middle, and then slows down at the end.
+
+            ease-in---Starts slowly and then speeds up towards the end.
+
+                ease-out---- Starts quickly and then slows down towards the end.
+
+                ease-in-out ----Starts slowly, speeds up in the middle, and then slows down at the end. */
+        }
+
+
+        .Circle-2:hover {
+
+            transform: translateX(90vw);
+            /*Here x is horizontal*/
+            transition: 5s ease-in;
+        }
+
+        .Circle-3:hover
+        {
+            transform: translateX(90vw);
+            transition: 5s ease-out;
+            background-color: aquamarine;
+
+            /*colour slowly change when it move*/
+        }
+
+        .Circle-4:hover{
+            transform: translate(90vw);
+            transition: 5s linear;
+            background-color: red;
+        }
+
+
+    </style>
+</body>
+
+</html>
