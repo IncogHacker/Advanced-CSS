@@ -1,0 +1,40 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100vh;
+    background-color: black;
+}
+
+.shadow-transition
+{
+    width:600px;
+    height: 300px;
+    border: 3px solid white;
+    
+     color:white;
+     display: grid;
+     place-content: center;
+     font-size: 3rem;
+/* 
+     box-shadow: 0px 0px 0px 0px white; */
+
+     transition: box-shadow;
+     transition-duration:5ms ;
+     transition-timing-function: linear;
+     /* transition-delay: 1s; */
+     
+}
+
+.shadow-transition:hover{
+
+    box-shadow: 5px 5px 5px 10px white;
+}
