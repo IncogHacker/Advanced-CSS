@@ -1,0 +1,72 @@
+*{
+    padding :0;
+    margin :0;
+    box-sizing: border-box;
+
+}
+
+
+.full
+{
+    width:100%;
+    height: 100vh;
+    border: 5px solid #4861EC;
+    background-color: #2B3033;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img{
+
+    width:500px;
+    /* aspect-ratio: 1; */
+    height:400px;
+    /* border: 2px solid #353F6D; */
+    box-shadow: 0px 0px 5px 15px #353F6D;
+    padding: 20px;
+    /* background-color: white; */
+
+    /* transition: all; */
+    transition-duration:1s ;
+    transition-timing-function:linear;
+}
+
+/* Transormation */
+
+.box img:hover{
+  
+   
+    /* ? Horizontal movemnet*/
+
+    /* transform: translateX(400px); */
+    /*move image 400px to right side horixontally(X)*/
+
+
+    /* transform: translate(-400px); */
+      /*move left side -400px*/
+
+
+    /*? vertical movement */
+
+    /* transform:translateY(400px); */
+    /*Move downwards*/
+
+    /* transform:translateY(-400px); */
+    /*Move upward*/
+
+
+     /*? New way to write */
+
+     translate:400px ; 
+     /*move horizontally*/
+
+
+     /* translate: 400px 200px; */
+      /*Move diagonaly*/
+
+      
+
+
+
+}
