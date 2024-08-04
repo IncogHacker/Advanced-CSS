@@ -1,0 +1,82 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+
+    --change-color:yellow ;
+    /*jaha jahan variable define kiya hoga wahan wahan color change hojayega yahan ke change krne se*/
+    
+    --background-color:rgba(0, 0, 0, 0.699);
+    --font-change:italic;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--change-color);
+}
+
+
+
+.Box-1{
+
+    width:800px;
+    height:500px;
+    padding-left:100px;
+    margin-top: 200px;
+
+    h1{
+        font-size: 3rem;
+        color: var(--change-color);
+        font-weight: bold;
+        padding-bottom: 50px;
+        font-style: var(--font-change);
+    }
+    p{
+        font-size: 1.5rem;
+        color:var(--change-color);
+        padding-bottom: 50px;
+        font-style: var(--font-change);
+        
+    }
+
+
+}
+
+.Box-1 a{
+    background-color:var(--background-color);
+    display: inline-block;
+    width:200px;
+    height:50px;
+    padding: 10px;
+    border:4px solid white;
+    border-radius: 4px;
+    text-align: center;
+    
+}
+a{
+    color:var(--change-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+  
+}
+
+.Box-1 a:hover{
+
+    background-color: white;
+    color: black;
+}
+
+.Box-2 img
+{
+    width:600px;
+    height:600px;
+    margin-top:50px;
+    
+}

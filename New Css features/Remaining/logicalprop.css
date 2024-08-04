@@ -1,0 +1,117 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+
+}
+/*? The border-inline CSS property is a shorthand property for setting the individual logical block border property values in a single place in the style sheet. */
+
+/* border-inline: 1px solid red  */
+/* This property is a shorthand for the following CSS properties:
+border-inline-color
+border-inline-style
+border-inline-width */
+
+/*? The border-block CSS property is a shorthand property for setting the individual logical block border property values in a single place in the style sheet. */
+/* border-block: 1px solid red  */
+/* This property is a shorthand for the following CSS properties:
+border-block-color
+border-block-style
+border-block-width */
+
+
+:root{
+
+    --change-color:white; 
+    --background-color:rgba(0, 0, 0, 0.699);
+    --font-change:normal;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--change-color);
+}
+
+
+
+.Box-1{
+
+    width:800px;
+    height:500px;
+    padding-left:100px;
+    margin-top: 200px;
+
+   
+   
+
+
+}
+
+h1{
+    font-size: 3rem;
+    color: var(--change-color);
+    font-weight: bold;
+    padding-bottom: 50px;
+    font-style: var(--font-change);
+    text-align: center;
+
+    border:2px solid red;
+
+
+
+    /* border-left:2px solid yellow;
+    border-right:2px solid yellow; */
+
+    /*in other way to write*/
+
+    border-inline: 2px solid yellow; /*work as left and right or we can say horizontally*/
+    border-block: 2px solid green;  /*work as top and bottom coz bloc work as stacking in vertical*/
+
+
+}
+
+p{
+    font-size: 1.5rem;
+    color:var(--change-color);
+    padding-bottom: 50px;
+    font-style: var(--font-change);
+    
+}
+
+.Box-1 a{
+    background-color:var(--background-color);
+    display: inline-block;
+    width:200px;
+    height:50px;
+    padding: 10px;
+    border:4px solid white;
+    border-radius: 4px;
+    text-align: center;
+    
+}
+a{
+    color:var(--change-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+  
+}
+
+.Box-1 a:hover{
+
+    background-color: white;
+    color: black;
+}
+
+.Box-2 img
+{
+    width:600px;
+    height:600px;
+    margin-top:50px;
+    
+}
+
